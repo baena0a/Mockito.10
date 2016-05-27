@@ -21,16 +21,20 @@ private static final IBaseDeDatosDePagos basePagos = null;
 		listaAnuncio = new TablonDeAnuncios();
 	}
 	@Test
-	public void AnuncioEnTablon() {
+	public void Test1() {
 		assertEquals(1, listaAnuncio.anunciosPublicados());
 	}
 	@Test
-	public void publicarAnuncio() {
+	public void Test2() {
 		Anuncio anun = new Anuncio("", "", "LA EMPRESA");
 		listaAnuncio.publicarAnuncio(anun, baseAnunciante,basePagos);
 		assertEquals(2, listaAnuncio.anunciosPublicados());
 		
 	}	
+	@Test
+	public void Test3() throws Exception {
+		
+	}
 
 
 }
